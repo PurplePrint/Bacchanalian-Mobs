@@ -1,0 +1,43 @@
+{
+  "rules": [
+    {
+      "mobID": ["minecraft:zombie", "minecraft:skeleton"],
+      "ChangeByDifficulty": {
+        "DifficultyMin": 200.0,
+        "DifficultyMax": 800.0,
+        "TargetDifficulty": 250,
+        "TargetMultiplier": [1.0, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4, 2.6, 2.8, 3.0, 3.2, 3.4]
+      },
+      "ChangeByTime": {
+        "TimeMin": 1200,
+        "TimeMax": "x",
+        "TargetTime": 3600,
+        "TargetMultiplier": [1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0, 2.1, 2.2]
+      },
+      "Conditions": {
+        "Set1": {
+          "dimensionID": 0,
+          "biomeID": "minecraft:plains"
+        },
+        "Set2": {
+          "dimensionID": -1,
+          "yRange": [0, 70]
+        }
+      }
+    },
+    {
+      "mobID": ["minecraft:pig", "minecraft:wolf", "minecraft:sheep", "minecraft:cow", "minecraft:chicken"],
+      "ChangeByDifficulty": {
+        "DifficultyMin": 200,
+        "DifficultyMax": 800,
+        "TargetDifficulty": 300,
+        "TargetMultiplier": 2
+      },
+      "Conditions": {
+        "Set1": {
+          "dimensionID": 0
+        }
+      }
+    }
+  ]
+}

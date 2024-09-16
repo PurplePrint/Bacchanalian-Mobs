@@ -1,0 +1,26 @@
+{
+  "PointsPerHealth": {
+    "MinimumAmount": 5.0,
+    "MaximumAmount": 20.0,
+    "Cost": 5.2,
+    "TargetAmount": 15.0
+  },
+  "PointsPerDPS": {
+    "MinimumAmount": 5.0,
+    "MaximumAmount": 30.0,
+    "Cost": 4.2,
+    "TargetAmount": 10.0
+  },
+  "PointsPerArmorDefense": {
+    "MinimumAmount": 1.0,
+    "MaximumAmount": 30.0,
+    "Cost": 4.2,
+    "TargetAmount": 15.0
+  },
+  "PointsPerArmorToughness": {
+    "MinimumAmount": 2.0,
+    "MaximumAmount": 10.0,
+    "Cost": 3.0,
+    "TargetAmount": 4.0
+  }
+}

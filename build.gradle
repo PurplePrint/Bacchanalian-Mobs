@@ -1,0 +1,51 @@
+buildscript {
+    repositories {
+        maven { url = 'https://maven.minecraftforge.net/' }
+        mavenCentral()
+        maven { url = 'https://cursemaven.com' }
+    }
+    dependencies {
+        classpath 'net.minecraftforge.gradle:ForgeGradle:3.+'
+    }
+}
+apply plugin: 'net.minecraftforge.gradle'
+
+version = "1.12.2-1.0"
+group = "purplerupter.bacchanalianmobs"
+archivesBaseName = "BacchanalianMobs"
+
+minecraft {
+    mappings channel: 'snapshot', version: '20171003-1.12'
+}
+
+repositories {
+    mavenCentral()
+    maven { url = 'https://maven.minecraftforge.net/' }
+    maven { url = 'https://cursemaven.com' }
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    minecraft 'net.minecraftforge:forge:1.12.2-14.23.5.2860'
+    compile 'com.google.code.gson:gson:2.8.9'
+    implementation name: 'SpartanWeaponry-1.12.2-1.6.0'
+    implementation name: 'SRParasites-1.12.2v1.9.21'
+    implementation 'curse.maven:gamestages-268655:2951840'
+
+}
+
+jar {
+    manifest {
+        attributes([
+                "Specification-Title": "BacchanalianMobs",
+                "Specification-Vendor": "Purplerupter",
+                "Specification-Version": "1",
+                "Implementation-Title": project.name,
+                "Implementation-Version": "${version}",
+                "Implementation-Vendor" :"Purplerupter",
+                "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+        ])
+    }
+}

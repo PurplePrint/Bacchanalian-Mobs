@@ -1,0 +1,36 @@
+{
+  "ALL": {
+    "ALL": {
+      "minecraft:strength": {
+        "MinimumLevel": 1.0,
+        "MaximumLevel": 5.0,
+        "TargetLevel": 3.0,
+        "TargetPointsLevel": 14.0,
+        "MinimumDuration": 40.0,
+        "MaximumDuration": 1000.0,
+        "TargetDuration": 400.0,
+        "TargetPointsDuration": "1.0;1.0;2.0;3.0;4.0;5.0;6.0;7.0;8.0;10.0;20.0;30.0;40.0"
+      },
+      "minecraft:regeneration": {
+        "MinimumLevel": 1.0,
+        "MaximumLevel": 5.0,
+        "TargetLevel": 3.0,
+        "TargetPointsLevel": 14.0,
+        "MinimumDuration": 40.0,
+        "MaximumDuration": 1000.0,
+        "TargetDuration": 400.0,
+        "TargetPointsDuration": "1.0;1.0;2.0;3.0;4.0;5.0;6.0;7.0;8.0;10.0;20.0;30.0;40.0"
+      },
+      "minecraft:haste": {
+        "MinimumLevel": 1.0,
+        "MaximumLevel": 5.0,
+        "TargetLevel": 3.0,
+        "TargetPointsLevel": 14.0,
+        "MinimumDuration": 40.0,
+        "MaximumDuration": 1000.0,
+        "TargetDuration": 400.0,
+        "TargetPointsDuration": "1.0;1.0;2.0;3.0;4.0;5.0;6.0;7.0;8.0;10.0;20.0;30.0;40.0"
+      }
+    }
+  }
+}

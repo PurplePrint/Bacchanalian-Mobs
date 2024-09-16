@@ -1,0 +1,39 @@
+{
+  "DamageSourceMultipliers": {
+    "rule1": {
+      "mobID": ["minecraft:zombie", "minecraft:spider"],
+      "DamageChanges": {
+        "onFire": 6.0,
+        "inFire": 6.0,
+        "fall": [0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7]
+      },
+      "Conditions": {
+        "Group1": {
+          "dimensionID": 0,
+          "biomeID": "minecraft:desert"
+        },
+        "Group2": {
+          "dimensionID": -1,
+          "yRange": ["x", 50]
+        }
+      }
+    }
+  },
+  "EntityDamageMultipliers": {
+    "rule1": {
+      "attackerID": ["minecraft:spider", "minecraft:creeper"],
+      "victimID": ["minecraft:player"],
+      "multiplier": 17,
+      "Conditions": {
+        "Group1": {
+          "dimensionID": 0
+        }
+      }
+    },
+    "rule2": {
+      "attacker_id": ["minecraft:zombie"],
+      "victim_id": ["minecraft:cow"],
+      "multiplier": [1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0, 2.1, 2.2]
+    }
+  }
+}

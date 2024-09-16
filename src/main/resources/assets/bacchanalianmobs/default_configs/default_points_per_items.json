@@ -1,0 +1,89 @@
+{
+  "ItemGroups": {
+    "basic_materials": [
+      "minecraft:planks:2",
+      "minecraft:stone",
+      "minecraft:cobblestone"
+    ],
+    "precious_materials": [
+      "minecraft:diamond",
+      "minecraft:gold_ingot",
+      "minecraft:emerald"
+    ],
+    "tools": [
+      "minecraft:iron_pickaxe",
+      "minecraft:diamond_pickaxe"
+    ]
+  },
+  "ItemCost": {
+    "basic_materials": {
+      "Cost": 5.0,
+      "ChangeByDimension": [
+        {
+          "dimension": "ALL",
+          "biomeID": "minecraft:plains",
+          "yRange": ["x", 60],
+          "operation": "MULT",
+          "amount": 1.2
+        },
+        {
+          "dimension": 0,
+          "biomeID": ["minecraft:forest", "minecraft:taiga"],
+          "yRange": [30, "x"],
+          "operation": "ADD",
+          "amount": 2.0
+        }
+      ],
+      "ChangeByGameStage": [
+        {
+          "stage": "+midgame",
+          "operation": "MULT",
+          "amount": 1.5
+        },
+        {
+          "stage": "-earlygame",
+          "operation": "ADD",
+          "amount": -1.0
+        }
+      ]
+    },
+    "precious_materials": {
+      "Cost": [10.0, 12.5, 15.0, 17.5, 20.0, 22.5, 25.0, 27.5, 30.0, 32.5, 35.0, 37.5, 40.0],
+      "ChangeByDimension": [
+        {
+          "dimension": -1,
+          "biomeID": "ALL",
+          "yRange": ["x" ,40],
+          "operation": "MULT",
+          "amount": 0.8
+        }
+      ],
+      "ChangeByGameStage": [
+        {
+          "stage": "+endgame",
+          "operation": "ADD",
+          "amount": 5.0
+        }
+      ]
+    },
+    "tools": {
+      "Cost": 20.0,
+      "ChangeByDimension": [
+        {
+          "dimension": 1,
+          "biomeID": "ALL",
+          "yRange": [50, 120],
+          "operation": "MULT",
+          "amount": 2.0
+        }
+      ],
+      "ChangeByGameStage": [
+        {
+          "stage": "-endgame",
+          "operation": "MULT",
+          "amount": 0.5
+        }
+      ]
+    }
+  }
+}
