@@ -1,1 +1,5 @@
-For all cases, except for exceptions, the GNU GPLv3 license applies. Exception #1: without the consent of the author, it is prohibited to distribute the mod on any edition of Minecraft other than the Java Edition. Exception #2: without the consent of the author, it is prohibited to distribute the mod in modpacks that require a special launcher to play.
+For all cases, except for exceptions, the GNU GPLv3 license applies.
+Exception #1: without the consent of the author, it is prohibited to distribute the mod
+on any edition of Minecraft other than the Java Edition.
+Exception #2: without the consent of the author, it is prohibited to distribute the mod
+in modpacks that require a special launcher to play.
