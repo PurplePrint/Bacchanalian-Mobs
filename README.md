@@ -1,5 +1,5 @@
 # Bacchanalian-Mobs
-All-in-one hardcore mobs mod for Minecraft with Dynamic Difficulty system and flexible config.
+Hardcore mobs mod for Minecraft with Dynamic Difficulty system and flexible config.
 
 **Currently WIP**
 
